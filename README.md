@@ -1,5 +1,9 @@
 # Search in Graphs
 
+"I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice." 
+
+Used prior approved work at: https://github.com/COSC3020/graph-search-Powerfuljackell
+
 Recall the pseudocode for Depth-First Search:
 
 Given a graph, a start node, and a node we're looking for:
@@ -25,6 +29,8 @@ the function and run automatically when you commit through a GitHub action.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+The worst case $\Theta$ would be $\Theta(V+E)$ where V is the number of vertices and E is the number of edges in the graph. This is because the DFS will check every possible route to find the final node in the search (using both vertices and edges), but it is also aware of every vertex it has already checked, reducing repetition.
 
 ## Bonus
 
